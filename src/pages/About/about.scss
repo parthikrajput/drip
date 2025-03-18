@@ -1,0 +1,218 @@
+@import "../../index.scss";
+
+.smooth-content {
+  background-color: #d7bda6;
+  width: 100vw;
+  .section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 650px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px !important;
+  }
+  .container {
+    align-items: start !important;
+    width: 100vw;
+    // height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .titlehed {
+    padding: 0 !important;
+  }
+}
+
+#section01-about {
+  align-items: flex-start;
+  .box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .wrapper {
+    background-color: transparent;
+    padding: 0px 0vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:nth-child(1) {
+      margin-left: 20vw;
+      text-align: right;
+    }
+
+    &:nth-child(2) {
+      text-align: left;
+      width: 40vw;
+      margin-top: 150%;
+    }
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h1 {
+    font-size: 5.5vw;
+    line-height: 3vw;
+  }
+  p {
+    font-size: 22px;
+    width: 65%;
+  }
+  .bottle-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .image {
+    width: 243px;
+    margin-top: 130px;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    height: 880px;
+    transform: scale(0.8);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      position: absolute;
+      &:nth-child(1) {
+        z-index: 10;
+      }
+      &:nth-child(2) {
+        z-index: 9;
+        margin-top: 190px;
+        margin-left: -400px;
+      }
+      &:nth-child(3) {
+        z-index: 8;
+      }
+    }
+  }
+  .animation {
+    margin-left: -120%;
+  }
+
+  .p2 {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .text-p2 {
+      transform: translateY(100vh);
+    }
+    .text02 {
+      width: 43vh;
+      min-width: 350px;
+      margin-left: 35vw;
+      margin-top: 70px;
+    }
+    .bottle-container-p2 {
+      width: 380px;
+      margin-top: 210px;
+      margin-left: -195px;
+      position: absolute;
+      transform: translateY(-130vh);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  #section01-about {
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    .box {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: flex-start;
+      width: 100vw;
+      flex-direction: column;
+    }
+    .wrapper {
+      &:nth-child(1) {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 70px;
+      }
+      &:nth-child(2) {
+        text-align: center;
+        width: 80vw;
+        margin-top: 20px !important;
+      }
+    }
+    .text01 {
+      margin-top: 10px;
+      font-size: 14px;
+      width: 100%;
+    }
+    h2 {
+      font-size: 5.5vw;
+    }
+    h1 {
+      font-size: 8.5vw;
+      line-height: 8.5vw;
+    }
+    .bottle-container {
+      transform: scale(0.45) translateY(250px);
+      position: relative !important;
+      height: 300px !important;
+      width: auto !important;
+      padding: 2rem 0rem;
+    }
+    .p2 {
+      flex-direction: column;
+      align-content: flex-start;
+      justify-content: center;
+      align-items: center;
+      .text02 {
+        margin-left: 0vw !important;
+        margin-top: -34vh !important;
+        font-size: 14px;
+      }
+      .bottle-container-p2 {
+        margin-top: 39vh !important;
+        margin-left: 25vw !important;
+        transform: translateY(-130vh);
+        img {
+          width: 50% !important;
+        }
+      }
+    }
+  }
+}

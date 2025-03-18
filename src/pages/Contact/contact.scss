@@ -1,0 +1,227 @@
+@import "../../index.scss";
+
+.contact {
+  background-image: url(../../assets/img/contactBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #9ca3af;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .contact {
+    margin-top: 40px;
+    height: 240px;
+    p {
+      font-size: 18px;
+      padding: 0px 10px;
+    }
+  }
+}
+.page-contact {
+  .wrapper {
+    background-color: #fff;
+    padding: 50px 30vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+      color: #111928;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 125%;
+      letter-spacing: -0.4px;
+      margin-bottom: 30px;
+    }
+    .subtitle {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    p {
+      color: #6b7280;
+    }
+    .faq-list {
+      position: relative;
+      .faq-item {
+        margin-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+        &::after {
+          border-bottom: 1px solid #e5e7eb;
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background-color: #e5e7eb;
+          bottom: 0;
+          margin-top: 20px;
+        }
+        .faq-question {
+          justify-content: space-between;
+          padding: 1rem;
+          color: #000;
+          display: flex;
+          cursor: pointer;
+          h3 {
+            font-style: normal;
+            line-height: 150%;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 0;
+            text-align: left;
+          }
+          .faq-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: none;
+          }
+        }
+        .faq-answer {
+          padding-bottom: 20px;
+          p {
+            margin: 0;
+            padding: 0 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .page-contact {
+    .wrapper {
+      padding: 50px 5vw;
+    }
+  }
+}
+.from {
+  padding-top: 50px;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 85%;
+      margin: 0 auto;
+      label {
+        color: rgb(17, 25, 40);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+      }
+      input,
+      textarea {
+        border-radius: 15px;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(209, 213, 219);
+        border-image: initial;
+        background: rgb(249, 250, 251);
+      }
+      input,
+      input[type="tel"],
+      input[type="password"],
+      textarea {
+        color: rgb(156, 163, 175);
+        font-size: 13px;
+        width: 100%;
+        border-radius: 120px;
+        padding: 5px 15px;
+      }
+      textarea {
+        resize: none;
+        height: 100px;
+        border-radius: 15px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(209, 213, 219);
+        border-image: initial;
+        background: rgb(249, 250, 251);
+      }
+      span.error-message {
+        font-size: 14px;
+        text-align: left;
+        font-weight: 500;
+        color: #b50000;
+      }
+    }
+    .submit-btn {
+      margin: 30px auto 0;
+    }
+  }
+}
+
+.address {
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    img {
+      border-radius: 8px;
+      background: #f3f4f6;
+      width: 50px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    b {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    p {
+      color: #6b7280;
+      font-size: 12px;
+    }
+    a {
+      font-weight: 800;
+      font-size: 12px;
+      margin-top: 5px;
+      display: block;
+      pointer-events: all;
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.5s;
+      color: #6b7280;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .address {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

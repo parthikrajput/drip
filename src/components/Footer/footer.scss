@@ -1,0 +1,99 @@
+@import "../../index.scss";
+
+footer {
+  position: relative;
+  z-index: 3;
+  background-color: $black;
+  padding: 40px 0 0;
+  width: 100vw;
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0 40px;
+  }
+  a {
+    display: block;
+  }
+  .logo {
+    width: 70px;
+  }
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    padding: 20px 0;
+    color: #9ca3af !important;
+  }
+  .title {
+    b {
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    li {
+      a {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        color: #9ca3af !important;
+      }
+    }
+  }
+  .column {
+    .row {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      width: 100%;
+      input[type="text"],
+      input[type="tel"],
+      input[type="password"],
+      textarea {
+        border-radius: 120px;
+        border: 2px solid var(--Neutrals-3, #353945);
+        padding: 5px 15px;
+        background-color: transparent;
+        color: #9ca3af;
+        font-size: 13px;
+        font-family: "Satoshi-Variable";
+        width: 100%;
+      }
+      #btnSubmit,
+      .btnSubmit img {
+        width: 25px;
+        margin-top: 4px;
+      }
+      #btnSubmit,
+      .btnSubmit {
+        background-color: transparent;
+        border: none;
+        margin-left: -70px;
+        /* margin-top: 5px; */
+      }
+    }
+  }
+  .info {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1081px) {
+  footer {
+    .row {
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding: 20px;
+    }
+    .info {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,598 @@
+.page-science {
+  .slider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    .swiper {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 0px;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .wrapper {
+    background-color: #fff;
+    padding: 50px 10vw;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    &.grey {
+      background-color: #f4f5f6;
+    }
+    h1 {
+      font-size: 45px;
+    }
+    p {
+      color: #6b7280;
+      font-size: 16px;
+      text-align: center;
+      margin: 25px 0;
+      width: 50vw;
+    }
+  }
+  .header,
+  .product-features {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  #section02-science {
+    h1 {
+      padding-top: 150px;
+    }
+    .main-image {
+      width: 345px;
+    }
+    .features {
+      position: absolute;
+      left: 0;
+      top: 0;
+      .feature {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        transform: scale(0);
+        img {
+          width: 80px;
+        }
+        p {
+          width: 210px;
+          margin: 0 10px;
+          color: #6b7280;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 150%;
+          text-align: center;
+        }
+        &.led {
+          margin-left: 340px;
+          margin-top: 10px;
+        }
+        &.aluminium {
+          margin-top: 80px;
+          margin-left: -150px;
+        }
+        &.inverted {
+          flex-direction: row-reverse !important;
+          img {
+            transform: scaleX(-1);
+          }
+        }
+        &.capacity {
+          margin-top: 320px;
+          margin-left: -150px;
+        }
+        &.sterilization {
+          margin-left: 340px;
+          margin-top: 310px;
+        }
+        &.keeps {
+          margin-top: 520px;
+          margin-left: -150px;
+        }
+        &.rubber {
+          margin-left: 340px;
+          margin-top: 570px;
+        }
+      }
+    }
+    .product,
+    .lid {
+      margin-left: -140px;
+      position: relative;
+      transform: scale(0.9);
+      transform-origin: 20vw 15vh;
+    }
+  }
+  #section03-science {
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .lid {
+      margin-left: -140px;
+      position: relative;
+      transform: scale(0.9);
+      transform-origin: 20vw 15vh;
+      display: block;
+      // position: fixed;
+      // height: 440px;
+      transform: scale(1.2);
+      margin-top: -50vh;
+      img {
+        width: 330px;
+        margin-left: 170px;
+      }
+      .features {
+        position: absolute;
+        left: 0;
+        top: 0;
+        .feature {
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: flex-start;
+          align-items: center;
+          position: absolute;
+          transform: scale(0);
+          &.waterproof {
+            margin-left: 290px;
+          }
+          &.inverted {
+            flex-direction: row-reverse !important;
+            img {
+              transform: scaleX(-1);
+            }
+          }
+          &.usbc {
+            margin-left: -130px;
+            margin-top: 25px;
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+            text-align: right;
+          }
+          &.uvc {
+            margin-top: 350px;
+            margin-left: 219px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+
+            img {
+              transform: rotate(90deg) translate(-30px, 90px);
+              width: 60px !important;
+            }
+            p {
+              width: 310px;
+            }
+          }
+          img {
+            width: 120px;
+            margin-left: 170px;
+          }
+          p {
+            width: 210px;
+            margin: 0 10px;
+            color: #6b7280;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 150%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  #section04-science {
+    height: 100vh !important;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    // padding-top: 100px !important;
+    h1 {
+      margin-top: -40vh;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      .card {
+        display: flex;
+        width: 35vw;
+        height: 20vw;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32.661px;
+        background: #fcfcfd;
+        box-shadow: 0px -8px 30px 6px rgba(15, 15, 15, 0.04);
+        position: absolute;
+        opacity: 1;
+        transform: translateY(100px);
+        img {
+          width: 50px;
+        }
+        p {
+          color: #000;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 150%;
+          letter-spacing: -0.52px;
+          text-transform: capitalize;
+          width: 90%;
+          text-align: center;
+          margin: 25px 0;
+        }
+      }
+    }
+  }
+  #section05-science {
+    width: 100%;
+    // height: 60vh;
+    padding-top: 100px;
+    background-color: #fff;
+    z-index: 9;
+  }
+  .comparison {
+    width: 100%;
+    h1 {
+      font-size: 35px;
+      font-weight: 700;
+    }
+    p {
+      width: 100%;
+    }
+    table {
+      width: 100%;
+      .title {
+        background-color: #f3f4f6;
+        * {
+          font-weight: 600;
+          font-size: 17px;
+        }
+      }
+      th {
+        width: 25%;
+        border-bottom: 1px solid #e6e7ea;
+        img {
+          width: 25px;
+        }
+      }
+      th,
+      td {
+        padding: 15px;
+        font-weight: 200;
+      }
+      th {
+        &:nth-child(1) {
+          width: 50%;
+          text-align: left;
+          padding-left: 50px;
+          // border: 1px solid #e6e7ea;
+        }
+      }
+    }
+  }
+  #section06-science {
+    padding-top: 100px !important;
+    position: relative;
+    .faq {
+      width: 100%;
+      p {
+        text-align: center;
+        width: 100%;
+      }
+      .faq-list {
+        position: relative;
+        .faq-item {
+          margin-bottom: 25px;
+          position: relative;
+          overflow: hidden;
+          &::after {
+            border-bottom: 1px solid #e5e7eb;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: #e5e7eb;
+            bottom: 0;
+            margin-top: 20px;
+          }
+          .faq-question {
+            justify-content: space-between;
+            padding: 1rem;
+            color: #000;
+            display: flex;
+            cursor: pointer;
+            h3 {
+              font-style: normal;
+              line-height: 150%;
+              font-weight: 700;
+              font-size: 18px;
+              margin-bottom: 0;
+              text-align: left;
+            }
+            .faq-icon {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex: none;
+            }
+          }
+          .faq-answer {
+            padding-bottom: 20px;
+            p {
+              margin: 0;
+              padding: 0 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.wrapper.gray {
+  background-color: #f4f5f6;
+}
+
+@media (max-width: 1024px) {
+  .page-science {
+    .wrapper {
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+        padding-top: 0px;
+      }
+      p {
+        color: #6b7280;
+        font-size: 16px;
+        text-align: center;
+        margin: 25px 0;
+        width: 100%;
+      }
+    }
+    .slider {
+      .swiper {
+        width: 100%;
+      }
+    }
+    .header {
+      margin-top: 40px;
+    }
+    #section02-science {
+      h1 {
+        padding-top: 0px;
+      }
+      .product {
+        transform-origin: 0vw 0vh;
+        .feature {
+          &.aluminium {
+            margin-left: -60px;
+          }
+          &.capacity {
+            margin-left: -70px;
+          }
+          &.keeps {
+            margin-left: -55px;
+          }
+          p {
+            width: 140px;
+            font-size: 23px;
+          }
+        }
+      }
+    }
+    #section03-science {
+      .lid {
+        img {
+          width: 252px;
+          margin-left: 82px;
+        }
+        .features {
+          .feature {
+            img {
+              width: 120px;
+              margin-left: 0;
+            }
+            &.waterproof {
+              margin-left: 240px;
+            }
+            &.usbc {
+              margin-left: 20px;
+              margin-top: -55px;
+            }
+            &.uvc {
+              margin-left: 154px;
+              p {
+                width: 140px;
+                font-size: 20px;
+              }
+            }
+            p {
+              width: 140px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    #section04-science {
+      height: 100vh !important;
+      display: flex;
+      flex-direction: column;
+      // justify-content: flex-start;
+      .cards {
+        .card {
+          display: flex;
+          width: 90vw;
+          height: 25vw;
+          border-radius: 20px;
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .page-science {
+    #section02-science {
+      .product {
+        .feature {
+          img {
+            width: 40px;
+          }
+          p {
+            width: 140px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .page-science {
+    overflow-x: hidden;
+    .wrapper {
+      padding: 50px 5vw;
+    }
+    #section02-science {
+      .product {
+        margin-left: -40px;
+        img {
+          width: 180px;
+        }
+        .feature {
+          &.led {
+            margin-left: 143px;
+            margin-top: 10px;
+          }
+          &.aluminium {
+            margin-left: -80px;
+            margin-top: 50px;
+          }
+          &.capacity {
+            margin-top: 166px;
+            margin-left: -68px;
+          }
+          &.sterilization {
+            margin-left: 143px;
+            margin-top: 150px;
+          }
+          &.rubber {
+            margin-left: 143px;
+            margin-top: 265px;
+          }
+          &.keeps {
+            margin-left: -79px;
+            margin-top: 265px;
+
+            img {
+              width: 40px;
+            }
+            p {
+              width: 140px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    #section03-science {
+      .lid {
+        img {
+          width: 120px;
+          margin-left: 82px;
+        }
+        .features {
+          .feature {
+            &.waterproof {
+              margin-left: 150px;
+            }
+            &.uvc {
+              margin-left: 150px;
+              margin-top: 200px;
+              img {
+                transform: rotate(90deg) translate(-30px, 90px);
+                width: 40px !important;
+              }
+              p {
+                width: 100px;
+                font-size: 14px;
+              }
+            }
+            img {
+              width: 40px;
+            }
+            p {
+              width: 100px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    #section04-science {
+      .cards {
+        .card {
+          display: flex;
+          width: 90vw;
+          height: 50vh;
+          border-radius: 20px;
+          box-shadow: none;
+        }
+      }
+    }
+    .comparison {
+      table {
+        th {
+          &:nth-child(1) {
+            width: 50%;
+            text-align: left;
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

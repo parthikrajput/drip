@@ -1,0 +1,23 @@
+.not-found-container {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.not-found-title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #000;
+}
+
+.not-found-text {
+  font-size: 20px;
+  color: #6c757d;
+  margin: 10px 0;
+}

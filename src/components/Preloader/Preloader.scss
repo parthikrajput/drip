@@ -1,0 +1,110 @@
+@import "../../index.scss";
+
+.preloader-container {
+  z-index: 99999;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+#preloader {
+  background: $black;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.fade {
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.intro-logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(60px, 10vw, 100px);
+}
+
+.intro-logo-image {
+  width: 100%;
+}
+
+.waves-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#wave01 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: 0.35;
+  transition: transform 0.1s linear;
+  transform: translateX(-50%);
+}
+
+#wave02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  opacity: 0.35;
+  transition: transform 0.1s linear;
+  transform: translateX(50%);
+}
+
+.progress-bar-container {
+  width: 100vw;
+  position: absolute;
+  bottom: 0rem;
+  z-index: 2;
+}
+
+.progress-bar {
+  height: 0.3rem;
+  width: 0px;
+  background-color: white;
+  transition: width 0.3s linear;
+}
+
+.counter-container {
+  display: flex;
+  position: absolute;
+  bottom: 0rem;
+  right: 1rem;
+}
+
+.counter {
+  position: relative;
+  width: 3.2em;
+  height: 2em;
+  overflow: hidden;
+  font-size: clamp(24px, 6vw, 60px);
+  color: white;
+}
+
+.number-slot-tens,
+.number-slot-ones {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+$black: #000;
+$white: #fff;
+$offWhite: #ffffff80;
+$bg: #1f1f1f;
+$satoshi: "Satoshi Variable";
+
+body {
+  font-family: $satoshi;
+  color: $black;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    background: #000000;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #000000;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+    background: #000000;
+    display: none;
+  }
+}
+::selection {
+  background: #fff;
+  color: #000;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+a {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.btn {
+  border-radius: 90px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: $black;
+  color: $white;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-decoration: none;
+  width: fit-content;
+  font-size: 14px;
+}
+h1 {
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+h2 {
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+h1 {
+  font-size: 5.5vw;
+}
+h2 {
+  font-size: 3.5vw;
+  line-height: 2.5vw;
+}
